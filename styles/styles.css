@@ -17,9 +17,8 @@
 
 body{
     font-family: var(--body-font);
-    background-color: var(--body-color);
-    color: var(--text-color);
     text-align: center;
+    background-color: rgb(161, 120, 127);
 }
 
 img{ 
@@ -44,13 +43,19 @@ h1{
     margin: 20px;
     padding: 20px;
     text-align: center;
+    
 }
 
 .card__container{
-    display: grid;
-    row-gap: 3.5 rem;
+    display: flex;
+    width: 80%;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-around;
 }
-
 .card__article{
     position: relative;
 }
@@ -61,28 +66,37 @@ h1{
 
 .card__data{
     width: 280px;
-    background-color: var(--container-color);
+    background-color: rgb(100, 147, 155);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1rem;
-    position: absolute;
+    
     bottom: -2rem;
     left: 0;
     right: 0;
     margin-inline: auto;
-   /*opacity: 0;*/
+    /*opacity: 0;*/
     transition: opacity 1s 1s;
 }
 
 .card__description{
     display: block;
-    font-size: var(--small-font-size);
+    font-size: small;
     margin-bottom: .25rem;
+    color: black;
 }
 
 .card__title{
-    font-size: var(--h2-font-size);
-    font-weight: 500;
-    color: var(--title-color);
+    font-size: large;
+    font-weight: 1000;
+    color: black;
     margin-bottom: .75rem;
 }
+
+
+.card__button{
+    font-size: small;
+    font-weight: 1000;
+    color: rgb(73, 44, 121);
+}
+
