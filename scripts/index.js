@@ -16,11 +16,31 @@ class Repository{
         return this.activities
 
     }
-    createActivity(){
-       
-        let aux=  new Activity(
-            1, "titl1", "desc1", "img1"
-        )
-        this.activities.push(aux)
+    createActivity(title, description, imgUrl){
+        const id = this.activities.length + 1;
+       const actividad = new Activity(id, title, description, imgUrl);
+       this.activities.push(actividad)
+        
     }
+}
+
+const repository= new Repository();
+
+
+const buildActivity = (Activity) =>{
+
+  const{ id, title, description, imgUrl} = Activity;
+  
+ const titleElement = documeny.createElement ('h3');
+const imageElement = document.createElement('img');
+const descriptionElement = document.createElement('p');
+
+titleElement.textContent = title;
+imageElement.src = imgUrl;
+descriptionElement.textContent = description;
+
+containerCard.appenChild(titleElement);
+containerCard.appenChild(imageElement);
+containerCard.appenChild(descriptionElement);
+
 }

@@ -16,7 +16,7 @@
 }
 
 body{
-    font-family: var(--body-font);
+    font-family: "Poppins", sans-serif;
     text-align: center;
     background-color: rgb(161, 120, 127);
 }
@@ -32,7 +32,27 @@ h1{
     font-family: "Poppins", sans-serif;
 }
 
-/*Tarjetas*/
+.menu {
+    display: flex;
+    justify-content: center;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    place-items: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
 .container{
     background-color: rgb(170, 103, 103);
     border-radius: 30px;
@@ -75,8 +95,6 @@ h1{
     left: 0;
     right: 0;
     margin-inline: auto;
-    /*opacity: 0;*/
-    transition: opacity 1s 1s;
 }
 
 .card__description{
@@ -100,3 +118,56 @@ h1{
     color: rgb(73, 44, 121);
 }
 
+.form{
+    background-color: rgb(170, 103, 103);
+    display: flex;
+    justify-content: center;
+}
+
+.actividadesFav {
+    
+}
+
+.formulario {
+    background-color: rgb(150, 79, 79); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.formulario h3 {
+    margin-top: 0;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.formulario input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(100, 147, 155);
+    color: white;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: rgb(100, 147, 155);
+}
